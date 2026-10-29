@@ -8,6 +8,14 @@ android {
     namespace 'com.issakib.panel'
     compileSdk 35
 
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/java']
+            res.srcDirs = ['src/main/res']
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
     defaultConfig {
         applicationId "com.issakib.panel"
         minSdk 26
